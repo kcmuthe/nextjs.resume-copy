@@ -1,0 +1,95 @@
+.resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+.resume-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.resume-header h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.headline {
+  margin: 8px 0 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.contact-info p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.resume-section {
+  margin-bottom: 32px;
+}
+
+.resume-section h2 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  color: #111;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 32px;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item h3 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+
+.item-meta {
+  margin: 0 0 12px;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.item ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list li {
+  background: #f6f6f6;
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+  .resume-header,
+  .two-column {
+    display: block;
+  }
+}
